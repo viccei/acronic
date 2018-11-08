@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script> 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<link href="C:/acronic/lightbox2-master/dist/css/lightbox.css" rel="stylesheet">-->
+<link rel="stylesheet" href="https://www.acronic.ro/lightboxgallery.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.acronic.ro/style.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  display: block;
+}
+.topnav {
+	margin: auto;
+	max-width: 65%;
+	overflow: hidden;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+.topnav-right {
+  float: right;
+}
+.icon {
+  display: none;
+}
+a {
+	color: white;
+}
+.slideshow-container {
+  
+  position: relative;
+  margin: auto;
+}
+.mySlides {display: none}
+
+.rectangle {
+	width: 60%;
+	
+	background-color: #F0F0F0;
+	margin: auto;
+	border-top: solid 2px white;
+}
+.rectangle1 {
+	width: 65%;
+	height: 300px;
+	background-color: #F0F0F4;
+	margin: auto;
+	border-top: solid 2px white;
+}
+.rectangle2 {
+	width: 65%;
+	height: 300px;
+	background-color: #101010;
+	margin: auto;
+	border-top: solid 1px white;
+	}
+.mouse {
+	cursor: pointer;
+}
+.bottombar {
+	width: 100%;
+	background-color: black;
+	color: white;
+	position: fixed;
+	bottom: 0;
+}
+@media screen and (max-width: 600px) {
+  .topnav span {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive span {
+    
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+
+<body>
+<br>
+
+	
+		<div class="topnav" id="myTopnav">
+			 &nbsp;acronicstudio <span></span>
+			<div class="topnav-right">
+				<span class="mouse" onclick="currentSlide(1)">Retouching</span> 
+				<span class="mouse" onclick="currentSlide(2)">CGI</span> 
+				<span class="mouse" onclick="currentSlide(3)">Contact</span>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars">&nbsp;</i></a>
+			</div>
+		</div>
+	
+	<!-- sectiune principala -->
+	
+	<div class="slideshow-container">
+		<div class="mySlides fade ">	
+			<div class="rectangle">
+        <div class="container">
+
+          <div class="lightboxgallery-gallery clearfix">
+    
+            <a class="lightboxgallery-gallery-item" target="_blank" href="https://kawshar.github.io/lightboxgallery/rahul-anil.jpg" data-title="Rahul Anil" data-alt="Rahul Anil" data-desc="A lightweight jQuery lightbox gallery plugin.">
+    
+              <div>
+    
+                <img src="https://kawshar.github.io/lightboxgallery/rahul-anil_thumb.jpg" title="Rahul Anil" alt="Rahul Anil">
+    
+                <div class="lightboxgallery-gallery-item-content">
+    
+                  <span class="lightboxgallery-gallery-item-title">Rahul Anil</span>
+    
+                </div>
+    
+              </div>
+    
+            </a>
+    
+            <a class="lightboxgallery-gallery-item" target="_blank" href="https://kawshar.github.io/lightboxgallery/noah-hinton.jpg" data-title="Noah Hinton" data-alt="Noah Hinton" data-desc="A lightweight jQuery lightbox gallery plugin.">
+    
+              <div>
+    
+                <img src="https://kawshar.github.io/lightboxgallery/noah-hinton_thumb.jpg" title="Noah Hinton" alt="Noah Hinton">
+    
+                <div class="lightboxgallery-gallery-item-content">
+    
+                  <span class="lightboxgallery-gallery-item-title">Noah Hinton</span>
+    
+                </div>
+    
+              </div>
+    
+            </a>
+    
+            <a class="lightboxgallery-gallery-item" target="_blank" href="https://kawshar.github.io/lightboxgallery/ness-joshua.jpg" data-title="Ness Joshua" data-alt="Ness Joshua" data-desc="A lightweight jQuery lightbox gallery plugin.">
+    
+              <div>
+    
+                <img src="https://kawshar.github.io/lightboxgallery/ness-joshua_thumb.jpg" title="Ness Joshua" alt="Ness Joshua">
+    
+                <div class="lightboxgallery-gallery-item-content">
+    
+                  <span class="lightboxgallery-gallery-item-title">Ness Joshua</span>
+    
+                </div>
+    
+              </div>
+    
+            </a>
+    
+            <a class="lightboxgallery-gallery-item" target="_blank" href="https://kawshar.github.io/lightboxgallery/matheus-ferrero.jpg" data-title="Matheus Ferrero" data-alt="Matheus Ferrero" data-desc="">
+    
+              <div>
+    
+                <img src="https://kawshar.github.io/lightboxgallery/matheus-ferrero_thumb.jpg" title="Matheus Ferrero" alt="Matheus Ferrero">
+    
+                <div class="lightboxgallery-gallery-item-content">
+    
+                  <span class="lightboxgallery-gallery-item-title">Matheus Ferrero</span>
+    
+                </div>
+    
+              </div>
+    
+            </a>
+    
+            <a class="lightboxgallery-gallery-item" target="_blank" href="https://kawshar.github.io/lightboxgallery/meyer-aidan.jpg" data-title="Meyer Aidan" data-alt="Meyer Aidan" data-desc="">
+    
+              <div>
+    
+                <img src="https://kawshar.github.io/lightboxgallery/meyer-aidan_thumb.jpg" title="Meyer Aidan" alt="Meyer Aidan">
+    
+                <div class="lightboxgallery-gallery-item-content">
+    
+                  <span class="lightboxgallery-gallery-item-title">Meyer Aidan</span>
+    
+                </div>
+    
+              </div>
+    
+            </a>
+    
+            <a class="lightboxgallery-gallery-item" target="_blank" href="https://kawshar.github.io/lightboxgallery/felix-russell-saw.jpg" data-title="Felix Russell Saw" data-alt="Felix Russell Saw" data-desc="">
+    
+              <div>
+    
+                <img src="https://kawshar.github.io/lightboxgallery/felix-russell-saw_thumb.jpg" title="Felix Russell Saw" alt="Felix Russell Saw">
+    
+                <div class="lightboxgallery-gallery-item-content">
+    
+                  <span class="lightboxgallery-gallery-item-title">Felix Russell Saw</span>
+    
+                </div>
+    
+              </div>
+    
+            </a>
+    
+            <a class="lightboxgallery-gallery-item" target="_blank" href="https://kawshar.github.io/lightboxgallery/joshua-ness.jpg" data-title="Joshua Ness" data-alt="Joshua Ness" data-desc="">
+    
+              <div>
+    
+                <img src="https://kawshar.github.io/lightboxgallery/joshua-ness_thumb.jpg" title="Joshua Ness" alt="Joshua Ness">
+    
+                <div class="lightboxgallery-gallery-item-content">
+    
+                  <span class="lightboxgallery-gallery-item-title">Joshua Ness</span>
+    
+                </div>
+    
+              </div>
+    
+            </a>
+    
+            <a class="lightboxgallery-gallery-item" target="_blank" href="https://kawshar.github.io/lightboxgallery/brooke-cagle.jpg" data-title="Brooke Cagle" data-alt="Brooke Cagle" data-desc="">
+    
+              <div>
+    
+                <img src="https://kawshar.github.io/lightboxgallery/brooke-cagle_thumb.jpg" title="Brooke Cagle" alt="Brooke Cagle">
+    
+                <div class="lightboxgallery-gallery-item-content">
+    
+                  <span class="lightboxgallery-gallery-item-title">Brooke Cagle</span>
+    
+                </div>
+    
+              </div>
+    
+            </a>
+    
+            <a class="lightboxgallery-gallery-item" target="_blank" href="https://kawshar.github.io/lightboxgallery/emile-seguin.jpg" data-title="Emile Seguin" data-alt="Emile Seguin" data-desc="">
+    
+              <div>
+    
+                <img src="https://kawshar.github.io/lightboxgallery/emile-seguin_thumb.jpg" title="Emile Seguin" alt="Emile Seguin">
+    
+                <div class="lightboxgallery-gallery-item-content">
+    
+                  <span class="lightboxgallery-gallery-item-title">Emile Seguin</span>
+    
+                </div>
+    
+              </div>
+    
+            </a>
+    
+            <a class="lightboxgallery-gallery-item" target="_blank" href="https://kawshar.github.io/lightboxgallery/caleb-frith.jpg" data-title="Caleb Frith" data-alt="Caleb Frith" data-desc="">
+    
+              <div>
+    
+                <img src="https://kawshar.github.io/lightboxgallery/caleb-frith_thumb.jpg" title="Caleb Frith" alt="Caleb Frith">
+    
+                <div class="lightboxgallery-gallery-item-content">
+    
+                  <span class="lightboxgallery-gallery-item-title">Caleb Frith</span>
+    
+                </div>
+    
+              </div>
+    
+            </a>
+    
+         
+    
+     
+    
+            
+    
+        </div>
+    
+      </div>
+      </div>
+		</div>
+
+		<div class="mySlides fade ">
+  			<div class="rectangle1"></div>
+		</div>
+
+		<div class="mySlides fade ">
+  			<div class="rectangle2"></div>
+		</div>
+	</div>
+
+	<div class="bottombar"> &copy; acronicstudio 2018. All rights reserved <span class="topnav-right mouse" id="" onclick="toggleFullScreen()">fullscreen</span>
+	</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<script>
+function toggleFullScreen() {
+  if (!document.fullscreenElement &&    // alternative standard method
+      !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement ) {  // current working methods
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen();
+    } else if (document.documentElement.msRequestFullscreen) {
+      document.documentElement.msRequestFullscreen();
+    } else if (document.documentElement.mozRequestFullScreen) {
+      document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullscreen) {
+      document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    }
+  }
+}
+</script>
+
+<!--<script src="C:/acronic/lightbox2-master/dist/js/lightbox.js"></script>-->
+<script src="https://www.acronic.ro/lightboxgallery.js"></script>
+
+<script type="text/javascript">
+
+  jQuery(function($) {
+
+    $(document).on('click', '.lightboxgallery-gallery-item', function(event) {
+
+      event.preventDefault();
+
+      $(this).lightboxgallery({
+
+        showCounter: true,
+
+        showTitle: true,
+
+        showDescription: true
+
+      });
+
+    });
+
+  });
+
+  </script>
+</body>
+</html>
