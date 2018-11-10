@@ -8,95 +8,13 @@
 <link rel="stylesheet" href="https://www.acronic.ro/lightboxgallery.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.acronic.ro/style.css">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
-  display: block;
-}
-.topnav {
-	margin: auto;
-	max-width: 65%;
-	overflow: hidden;
-	background-color: #000000;
-	color: #FFFFFF;
-}
-.topnav-right {
-  float: right;
-}
-.icon {
-  display: none;
-}
-a {
-	color: white;
-}
-.slideshow-container {
-  
-  position: relative;
-  margin: auto;
-}
-.mySlides {display: none}
-
-.rectangle {
-	width: 60%;
-	
-	background-color: #F0F0F0;
-	margin: auto;
-	border-top: solid 2px white;
-}
-.rectangle1 {
-	width: 65%;
-	height: 300px;
-	background-color: #F0F0F4;
-	margin: auto;
-	border-top: solid 2px white;
-}
-.rectangle2 {
-	width: 65%;
-	height: 300px;
-	background-color: #101010;
-	margin: auto;
-	border-top: solid 1px white;
-	}
-.mouse {
-	cursor: pointer;
-}
-.bottombar {
-	width: 100%;
-	background-color: black;
-	color: white;
-	position: fixed;
-	bottom: 0;
-}
-@media screen and (max-width: 600px) {
-  .topnav span {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive span {
-    
-    display: block;
-    text-align: left;
-  }
-}
-</style>
+<link rel="stylesheet" href="./css/acronic.css">
 </head>
 
 <body>
 <br>
 
-	<!-- site menu -->
+	<!-- menu -->
 		<div class="topnav" id="myTopnav">
 			 &nbsp;acronicstudio <span></span>
 			<div class="topnav-right">
@@ -110,7 +28,7 @@ a {
 			</div>
 		</div>
 	
-	<!-- main section -->
+	<!-- retouching -->
 	
 		<div class="mySlides fade ">	
         <div class="container">
@@ -288,10 +206,12 @@ a {
       </div>
       </div>
 		</div>
-
+    <!-- cgi -->
 		<div class="mySlides fade ">
   			<div class="rectangle1"></div>
 		</div>
+
+    <!-- case studies -->
 
 		<div class="mySlides fade ">
   			<div class="rectangle2"></div>
@@ -299,7 +219,7 @@ a {
   </div>
   
 <!-- bottom bar / fullscreen mode -->
-	<div class="bottombar"> &copy; acronicstudio 2018. All rights reserved 
+	<div class="bottombar"> Copyright &copy; 2014 acronicstudio. All rights reserved 
     <span class="topnav-right mouse" id="" onclick="toggleFullScreen()">fullscreen</span>
 	</div>
 
