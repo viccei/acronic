@@ -44,10 +44,25 @@ body {
   .rectangle2 {
       width: 65%;
       height: 300px;
-      background-color: #101010;
+      background-color: #F0F0F4;
       margin: auto;
       border-top: solid 1px white;
       }
+  .rectangle3 {
+      width: 65%;
+      height: 300px;
+      background-color: #F0F0F4;
+      margin: auto;
+      border-top: solid 1px white;
+      }
+   .rectangle4 {
+      width: 65%;
+      height: 300px;
+      background-color: #F0F0F4;
+      margin: auto;
+      border-top: solid 1px white;
+      }   
+
   .mouse {
       cursor: pointer;
   }
